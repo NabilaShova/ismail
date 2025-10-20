@@ -33,7 +33,7 @@ body {
   font-family: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  line-height: 1.2;
+  line-height: 1.1;
   overflow-x: hidden;
 }
 
@@ -45,7 +45,7 @@ body {
   background: rgba(26, 26, 46, 0.95);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-color);
-  padding: 1rem 0;
+  padding: 1.1rem 0;
   z-index: 1000;
   transition: all 0.3s ease;
 }
@@ -56,7 +56,7 @@ body {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 0.8rem;
 }
 
 .logo {
@@ -72,12 +72,13 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .nav-links a {
   text-decoration: none;
   color: var(--text-secondary);
+  /* color: white; */
   font-weight: 500;
   transition: all 0.3s ease;
   position: relative;
@@ -118,7 +119,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 6rem 2rem 4rem;
+  padding: 8rem 2rem 4rem;
   background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
   position: relative;
   overflow: hidden;
@@ -185,7 +186,7 @@ body {
 .home .subtitle {
   font-size: 1.3rem;
   color: var(--text-secondary);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -195,7 +196,7 @@ body {
   color: var(--text-muted);
   max-width: 500px;
   margin-bottom: 2rem;
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
 .cta-buttons {
@@ -205,7 +206,7 @@ body {
 }
 
 .btn {
-  padding: 0.8rem 2rem;
+  padding: 0.6rem 2rem;
   border-radius: 50px;
   text-decoration: none;
   font-weight: 600;
@@ -215,7 +216,7 @@ body {
   gap: 0.5rem;
   border: none;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .btn-primary {
@@ -361,11 +362,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: var(--bg-card);
-  color: var(--text-secondary);
+  /* color: var(--text-secondary); */
+  color: white;
   text-decoration: none;
   transition: all 0.3s ease;
   border: 1px solid var(--border-color);
@@ -411,11 +413,11 @@ body {
 
 .section-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .section h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 1rem;
   background: var(--gradient-primary);
@@ -428,7 +430,7 @@ body {
 .section h2::after {
   content: '';
   position: absolute;
-  bottom: -10px;
+  bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
   width: 60px;
@@ -461,7 +463,7 @@ body {
 
 .card h3 {
   color: var(--primary-color);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -474,12 +476,13 @@ body {
 }
 
 .card li {
-  color: var(--text-secondary);
+  /* color: var(--text-secondary); */
+  color: white;
   margin-bottom: 0.9rem;
   padding-left: 1.5rem;
   position: relative;
-  font-size: 1.05rem;
-  line-height: 1.75;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .card li::before {
@@ -547,8 +550,8 @@ body {
 /* Improve readability of card paragraphs */
 .card p {
   color: var(--text-secondary);
-  font-size: 1.05rem;
-  line-height: 1.75;
+  font-size: 1rem;
+  line-height: 1.5;
   margin-bottom: 1rem;
 }
 
@@ -682,7 +685,7 @@ body {
 .contact-merged {
   background: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
+  /* border-bottom: 1px solid var(--border-color); */
   border-radius: 20px;
 }
 
@@ -701,7 +704,7 @@ body {
 }
 
 /* ===== FOOTER ===== */
-footer {
+/* footer {
   text-align: center;
   padding: 3rem 0;
   background: var(--bg-secondary);
@@ -739,7 +742,7 @@ footer p {
   background: var(--primary-color);
   color: white;
   transform: translateY(-2px);
-}
+} */
 
 /* ===== RESPONSIVE ===== */
 .menu-toggle {
@@ -879,7 +882,8 @@ footer p {
         <li><a href="#research">Research</a></li>
         <li><a href="#experience">Experience</a></li>        
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#achievements">Awards</a></li>
+        <li><a href="#certificates">Awards</a></li>
+        <li><a href="#achievements">Achievements</a></li>
         <li><a href="#volunteer">Activities</a></li>
       </ul>
       <div class="menu-toggle" id="mobile-menu">&#9776;</div>
@@ -910,13 +914,13 @@ footer p {
           <a href="tel:+8801636434993" class="contact-link" title="Phone">
             <i class="fas fa-phone"></i>
           </a>
-          <a href="#" title="LinkedIn">
+          <a href="https://www.linkedin.com/in/md-ismail-hossain-shaikat" target="_blank" title="LinkedIn">
             <i class="fab fa-linkedin"></i>
           </a>
           <a href="https://leetcode.com/u/ismail39/" target="_blank" title="LeetCode">
             <i class="fas fa-code"></i>
           </a>
-          <a href="#" title="GitHub">
+          <a href="https://github.com/ismail-ru-cse-39" target="_blank" title="GitHub">
             <i class="fab fa-github"></i>
           </a>
         </div>
@@ -934,10 +938,10 @@ footer p {
     </div>
     <div class="card">
       <p>
-        I have completed my Bachelor’s degree in Computer Science and Engineering with a CGPA of 3.57, ranking 5th in my class, with a solid foundation in <b>Algorithms, System Design, and Distributed Computing</b>.
+        I have completed my Bachelor’s degree in Computer Science and Engineering with a <b>CGPA of 3.57</b>, ranking <b>5th</b> in my class, with a solid foundation in <b>Algorithms, System Design, and Distributed Computing</b>.
       </p>
       <ul>
-        <li><i class="fas fa-certificate"></i> Co‑inventor of two granted patents at <a href="https://research.samsung.com/srbd" target="_blank" style="text-decoration: none; color: var(--primary-color);">Samsung Electronics </a> in wearable technology and emergency response systems</li>
+        <li><i class="fas fa-certificate"></i> Co‑inventor of two patents at <a href="https://research.samsung.com/srbd" target="_blank" style="text-decoration: none; color: var(--primary-color); font-style: italic;">Samsung Electronics </a> in <b>Wearable Technology</b> and <b>Emergency Response Systems</b></li>
         <li><i class="fas fa-brain"></i> Hands‑on experience in AI, Machine Learning, and real‑time data analysis for intelligent and adaptive systems</li>
         <li><i class="fas fa-mobile-alt"></i> Skilled in mobile architecture (Kotlin, Java, Swift, Objective‑C) and cross‑platform app development for Android and iOS</li>
         <li><i class="fas fa-microchip"></i> Specialized in system‑level optimization for power and memory efficiency in mobile and IoT environments</li>
@@ -956,20 +960,20 @@ footer p {
     </div>
     <div class="card">
       <h3><i class="fas fa-university"></i> University of Rajshahi — Rajshahi, Bangladesh</h3>
-      <p><strong>Bachelor of Science — Computer Science & Engineering</strong> • Jan. 2015 – Apr. 2019</p>
-      <ul>
+      <p><strong>Bachelor of Science — Computer Science & Engineering</strong> • <span style="color: var(--primary-color); font-size: 16px;">Jan. 2015 – Apr. 2019</span></p>
+      <ul style="padding-bottom: 20px;">
         <li>CGPA: 3.57 out of 4.00 (5th position)</li>
         <li>Thesis: Bigmart Data Analysis — hypothesis generation, data exploration, data cleaning, feature engineering, and model building</li>
       </ul>
 
       <h3><i class="fas fa-school"></i> Notre Dame College — Dhaka, Bangladesh</h3>
-      <p><strong>Higher Secondary Certificate — Science Group</strong> • July 2011 – Aug. 2013</p>
-      <ul>
+      <p><strong>Higher Secondary Certificate — Science Group</strong> • <span style="color: var(--primary-color); font-size: 16px;">July 2011 – Aug. 2013</span></p>
+      <ul style="padding-bottom: 20px;">
         <li>GPA: 5.00 out of 5.00 (Govt. scholarship with position 492)</li>
       </ul>
 
       <h3><i class="fas fa-school"></i> Pabna Zilla School — Pabna, Bangladesh</h3>
-      <p><strong>Secondary School Certificate — Science Group</strong> • Jan. 2009 – May 2011</p>
+      <p><strong>Secondary School Certificate — Science Group</strong> • <span style="color: var(--primary-color); font-size: 16px;">Jan. 2009 – May 2011</span></p>
       <ul>
         <li>GPA: 5.00 out of 5.00 (Govt. scholarship with position 46)</li>
       </ul>
@@ -1166,31 +1170,10 @@ footer p {
     </div>
   </section>
 
-  <!-- ===== ACHIEVEMENTS ===== -->
-  <section id="achievements" class="section">
-    <div class="section-header">
-      <h2><i class="fas fa-trophy"></i>Achievements</h2>
-    </div>
-    <div class="card">
-      <ul>
-        <li><i class="fas fa-medal"></i> 2025 – Passed Machine Learning & AI Test, Samsung R&D</li>
-        <li><i class="fas fa-certificate"></i> 2024 – Code Review Award, Samsung R&D</li>
-        <li><i class="fas fa-certificate"></i> 2024 – Excellence in Software Certification Test Award, Samsung R&D</li>
-        <li><i class="fas fa-star"></i> 2024 – Icon of the Month Award (March 24), Samsung R&D</li>
-        <li><i class="fas fa-award"></i> 2023 – CTO Award, Samsung R&D</li>
-        <li><i class="fas fa-code"></i> 2023 – Passed Advanced & Professional Level Coding Test, Samsung R&D</li>
-        <li><i class="fas fa-lightbulb"></i> 2021 – Excellence in Innovation Award, Samsung R&D</li>
-        <li><i class="fas fa-trophy"></i> 2020 – Excellence in Development Award, Samsung R&D</li>
-        <li><i class="fas fa-university"></i> 2016 – NCPC Regional Programming Contest, Rajshahi University</li>
-        <li><i class="fas fa-graduation-cap"></i> 2013 – Bangladesh Govt. Scholarship for H.S.C Board Examination, Notre Dame College</li>
-      </ul>
-    </div>
-  </section>
-
     <!-- ===== CERTIFICATES ===== -->
   <section id="certificates" class="section">
     <div class="section-header">
-      <h2><i class="fas fa-certificate"></i> Certificates</h2>
+      <h2><i class="fas fa-trophy"></i>Awards & Certificates</h2>
     </div>
     <div class="slider" data-autoplay="true" data-interval="4000">
       <div class="slider-track">
@@ -1247,7 +1230,28 @@ footer p {
       </div>
     </div>
   </section>
-  
+ 
+    <!-- ===== ACHIEVEMENTS ===== -->
+  <section id="achievements" class="section">
+    <div class="section-header">
+      <h2><i class="fas fa-certificate"></i>Achievements</h2>
+    </div>
+    <div class="card">
+      <ul>
+        <li><i class="fas fa-medal"></i> 2025 – Passed Machine Learning & AI Test, Samsung R&D Institute Bangladesh</li>
+        <!-- <li><i class="fas fa-certificate"></i> 2024 – Code Review Award, Samsung R&D</li>
+        <li><i class="fas fa-certificate"></i> 2024 – Excellence in Software Certification Test Award, Samsung R&D</li>
+        <li><i class="fas fa-star"></i> 2024 – Icon of the Month Award (March 24), Samsung R&D</li>
+        <li><i class="fas fa-award"></i> 2023 – CTO Award, Samsung R&D</li> -->
+        <li><i class="fas fa-code"></i> 2023 – Passed Advanced & Professional Level Coding Test, Samsung R&D Institute Bangladesh</li>
+        <li><i class="fas fa-lightbulb"></i> 2021 – Excellence in Innovation Award, Samsung R&D Institute Bangladesh</li>
+        <li><i class="fas fa-trophy"></i> 2020 – Excellence in Development Award, Samsung R&D Institute Bangladesh</li>
+        <li><i class="fas fa-university"></i> 2016 – NCPC Regional Programming Contest, Rajshahi University</li>
+        <li><i class="fas fa-graduation-cap"></i> 2013 – Bangladesh Govt. Scholarship for H.S.C Board Examination, Notre Dame College</li>
+      </ul>
+    </div>
+  </section>
+
   <!-- ===== VOLUNTEER ===== -->
   <section id="volunteer" class="section">
     <div class="section-header">
@@ -1267,17 +1271,10 @@ footer p {
 
   <!-- ===== CONTACT + FOOTER (MERGED) ===== -->
   <section id="contact" class="section contact-merged">
-    <div class="section-header">
+    <div class="section-header" style="margin-top: -40px; padding-bottom: 1rem;">
       <h2><i class="fas fa-envelope"></i> Get in Touch</h2>
     </div>
     <div class="contact-info">
-      <div class="contact-item">
-        <i class="fas fa-phone"></i>
-        <div>
-          <h4>Phone</h4>
-          <a href="tel:+8801636434993">+8801636434993</a>
-        </div>
-      </div>
       <div class="contact-item">
         <i class="fas fa-envelope"></i>
         <div>
@@ -1286,10 +1283,17 @@ footer p {
         </div>
       </div>
       <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <div>
+          <h4>Phone</h4>
+          <a href="tel:+8801636434993">+8801636434993</a>
+        </div>
+      </div>
+      <div class="contact-item">
         <i class="fab fa-linkedin"></i>
         <div>
           <h4>LinkedIn</h4>
-          <a href="https://www.linkedin.com/in/ismail39" target="_blank">linkedin.com/in/ismail39</a>
+          <a href="https://www.linkedin.com/in/md-ismail-hossain-shaikat" target="_blank">MD. Ismail Hossain</a>
         </div>
       </div>
       <div class="contact-item">
@@ -1299,7 +1303,8 @@ footer p {
           <span>Dhaka, Bangladesh</span>
         </div>
       </div>
-    </div><br>
+    </div>
+    <br>
     <!-- <div class="footer-social">
       <a href="mailto:ismail.ru.cse@gmail.com" title="Email">
         <i class="fas fa-envelope"></i>
@@ -1308,8 +1313,9 @@ footer p {
         <i class="fab fa-linkedin"></i>
       </a>
     </div> -->
-    <p class="copyright">© 2025 MD. Ismail Hossain</p>
+    <p class="copyright" style="margin-bottom: -50px;">© 2025 MD. Ismail Hossain</p>
   </section>
+  <br><br>
 
   <script>
     // Mobile menu toggle
