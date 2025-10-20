@@ -60,7 +60,7 @@ body {
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   background: var(--gradient-primary);
   -webkit-background-clip: text;
@@ -922,7 +922,7 @@ footer p {
         </div>
       </div>
       <div class="home-image">
-        <img src="ismail.jpeg" alt="MD. Ismail Hossain" class="profile-photo" />
+        <img src="assets/ismail.jpeg" alt="MD. Ismail Hossain" class="profile-photo" />
       </div>
     </div>
   </section>
@@ -1196,29 +1196,47 @@ footer p {
       <div class="slider-track">
         <div class="slide">
           <div class="slide-media">
-            <img src="assets/certificates/bsc_scholarship.jpg" alt="Govt. Scholarship for H.S.C. Board Exam" />
+            <img src="assets/certificates/code review_2024.jpg" alt="Code Review Award" />
           </div>
           <div class="slide-content">
-            <h4>Govt. Scholarship for H.S.C. Board Exam</h4>
-            <p>Add a short description of the certificate here. You can describe the context, recognition, and key details.</p>
+            <h4>Code Review Award • <span style="font-size: 18px;">2024</span></h4>
+            <p>Awarded as the Best Code Reviewer at Samsung R&D Institute Bangladesh during July ~ September of the year 2024.</p>
           </div>
         </div>
         <div class="slide">
           <div class="slide-media">
-            <img src="assets/certificates/copc_certificate.jpg" alt="Certification of Professional Coding" />
+            <img src="assets/certificates/icon_2024.jpg" alt="Icon Award" />
           </div>
           <div class="slide-content">
-            <h4>Certification of Professional Coding</h4>
-            <p>Add a short description of the certificate here. Mention scope, skills validated, or issuing body.</p>
+            <h4>Icon of the Month • <span style="font-size: 18px;">2024</span></h4>
+            <p>Honored with the Icon of the Month Award during the month of March of the year 2024.</p>
           </div>
         </div>
         <div class="slide">
           <div class="slide-media">
-            <img src="assets/certificates/reactjs.jpeg" alt="ReactJS Certificate" />
+            <img src="assets/certificates/swc.jpg" alt="Excellence in SWC Award" />
           </div>
           <div class="slide-content">
-            <h4>ReactJS Certificate</h4>
-            <p>Add a short description of the certificate here. Include relevant topics covered or accomplishments.</p>
+            <h4>Excellence in Software Certification Test Award • <span style="font-size: 18px;">2024</span></h4>
+            <p>Recognized with Excellence Award in SW Certification Test at Samsung R&D Institute Bangladesh for a professional-level problem-solving assessment focused on Data Structures and Algorithms.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-media">
+            <img src="assets/certificates/cto.jpg" alt="CTO Award" />
+          </div>
+          <div class="slide-content">
+            <h4>CTO Award • <span style="font-size: 19px;">2024</span></h4>
+            <p>Honored with the CTO Award for outstanding contribution to the company during April ~ June of the year 2024.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-media">
+            <img src="assets/certificates/excellence_2023.jpg" alt="Icon Award" />
+          </div>
+          <div class="slide-content">
+            <h4>Excellence Award • <span style="font-size: 18px;">2023</span></h4>
+            <p>Recognized with the Excellence Award for delivering critical project support and ensuring operational excellence during April ~ June of the year 2023.</p>
           </div>
         </div>
       </div>
@@ -1281,7 +1299,7 @@ footer p {
           <span>Dhaka, Bangladesh</span>
         </div>
       </div>
-    </div>
+    </div><br>
     <!-- <div class="footer-social">
       <a href="mailto:ismail.ru.cse@gmail.com" title="Email">
         <i class="fas fa-envelope"></i>
@@ -1290,7 +1308,7 @@ footer p {
         <i class="fab fa-linkedin"></i>
       </a>
     </div> -->
-    <p class="copyright">© 2025 MD. Ismail Hossain • Designed with Passion</p>
+    <p class="copyright">© 2025 MD. Ismail Hossain</p>
   </section>
 
   <script>
@@ -1393,7 +1411,7 @@ footer p {
       const dotsContainer = slider.querySelector('.slider-dots');
       let index = 0;
       let autoplay = slider.getAttribute('data-autoplay') === 'true';
-      const interval = parseInt(slider.getAttribute('data-interval') || '4000', 10);
+      const interval = parseInt(slider.getAttribute('data-interval') || '8000', 10);
       let timer;
 
       function goTo(i) {
